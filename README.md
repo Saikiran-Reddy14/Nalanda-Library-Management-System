@@ -35,7 +35,7 @@ npm install
 ### Running the Application
 Make sure MongoDB is running.
 Start the server:
-node server.js
+npm start
 The server will start on the port specified in the .env file (default: 8000).
 
 
