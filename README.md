@@ -48,12 +48,12 @@ The server will start on the port specified in the .env file (default: 8000).
 **Books**
 **GET /books/:** Get all books (accessible to all users)
 **POST /books/:** Create a new book (Admin only)
-**PUT /books/:** Update book information (Admin only)
-**DELETE /books/:** Delete a book (Admin only)
+**PUT /books/:id:** Update book information (Admin only)
+**DELETE /books/:id:** Delete a book (Admin only)
 
 **Borrowing**
-**POST /borrow/:** Borrow a book (Member only)
-**POST /borrow/return/:** Return a borrowed book (Member only)
+**POST /borrow/:id:** Borrow a book (Member only)
+**POST /borrow/return/:id:** Return a borrowed book (Member only)
 **GET /borrow/history:** Get the borrowing history of the current user (Member only)
 
 **Reports**
