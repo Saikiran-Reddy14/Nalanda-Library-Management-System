@@ -12,7 +12,7 @@ const register = async (req, res) => {
     const payload = { user: { id: user._id, role: user.role } };
 
     const token = jwt.sign(payload, process.env.JWT_SECRET, {
-      expiresIn: "12h",
+      expiresIn: "6h",
     });
     res.status(201).send("User registered");
   } catch (err) {
@@ -32,7 +32,7 @@ const login = async (req, res) => {
 
     const payload = { user: { id: user._id, role: user.role } };
     const token = jwt.sign(payload, process.env.JWT_SECRET, {
-      expiresIn: "12h",
+      expiresIn: "6h",
     });
 
     res.cookie("token", token, {
