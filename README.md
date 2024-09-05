@@ -26,7 +26,7 @@ PORT=8000
 ### Installation
 
 **Clone the repository:**
-git clone https://github.com/yourusername/nalanda-library-management-system.git
+git clone https://github.com/Saikiran-Reddy14/Nalanda-Library-Management-System.git
 cd nalanda-library-management-system
 
 Install dependencies:
