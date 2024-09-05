@@ -7,10 +7,10 @@ const {
 } = require("../controllers/borrowControllers");
 const router = express.Router();
 
-router.post("/:bookId", auth, borrowBook);
+router.post("/:bookId", borrowBook);
 
-router.post("/return/:bookId", auth, returnBook);
+router.post("/return/:bookId", returnBook);
 
-router.get("/history", auth, getHistory);
+router.get("/history", getHistory);
 
 module.exports = router;
